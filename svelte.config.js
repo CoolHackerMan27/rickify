@@ -8,10 +8,10 @@ const config = {
 			assets: 'build',
 			fallback: '404.html',
 			strict: true
-		})
-	},
-	paths: {
-		base: process.env.NODE_ENV === 'production' ? '/rickify' : ''
+		}),
+		paths: {
+			base: process.argv.includes('build') ? '/rickify' : ''
+		}
 	}
 };
 

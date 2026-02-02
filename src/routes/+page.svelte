@@ -2,6 +2,8 @@
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
+	import logo from '$lib/assets/image.jpg';
 
 	let isDragging = $state(false);
 	let fileInput: HTMLInputElement;
@@ -94,12 +96,7 @@
 		<!-- Logo Card -->
 		<Card.Root class="mb-8">
 			<Card.Content class="flex justify-center p-8">
-				<img
-					src="/src/lib/assets/image.jpg"
-					alt="Rickify Logo"
-					width="200"
-					class="rounded-lg shadow-md"
-				/>
+				<img src={logo} alt="Rickify Logo" width="200" class="rounded-lg shadow-md" />
 			</Card.Content>
 		</Card.Root>
 
