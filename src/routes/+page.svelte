@@ -3,7 +3,8 @@
 	import * as Card from '$lib/components/ui/card';
 	import { goto } from '$app/navigation';
 	import { base } from '$app/paths';
-	import logo from '$lib/assets/image.jpg';
+	import { resolve } from '$app/paths';
+	import logo from '$lib/assets/image.jpeg';
 
 	let isDragging = $state(false);
 	let fileInput: HTMLInputElement;
@@ -63,7 +64,7 @@
 
 		try {
 			sessionStorage.setItem('droppedFiles', JSON.stringify(allData));
-			goto(`${base}/details`, {});
+			goto(`${resolve('/details')}`, {});
 		} catch (err) {
 			console.error('Storage error:', err);
 			alert('Data is too large to store. Try uploading fewer files.');
@@ -87,7 +88,7 @@
 	<div class="mx-auto max-w-2xl px-6 py-16">
 		<!-- Hero Section -->
 		<div class="mb-12 text-center">
-			<h1 class="mb-4 text-5xl font-bold tracking-tight">Welcome to Rickify</h1>
+			<h1 class="mb-4 text-5xl font-bold tracking-tight">Rickify!</h1>
 			<p class="text-lg text-zinc-400">
 				It's a random spotify data analysis thing. Made for fun and to learn SvelteKit.
 			</p>
@@ -96,13 +97,13 @@
 		<!-- Logo Card -->
 		<Card.Root class="mb-8">
 			<Card.Content class="flex justify-center p-8">
-				<img src={logo} alt="Rickify Logo" width="200" class="rounded-lg shadow-md" />
+				<img src={logo} alt="Little Flug Guy!" width="250" class="rounded-lg shadow-md" />
 			</Card.Content>
 		</Card.Root>
 
 		<!-- Navigation -->
 		<div class="flex justify-center">
-			<Button variant="outline" href="{base}/about">About my site</Button>
+			<Button variant="outline" href={resolve('/about')}>About my site</Button>
 		</div>
 
 		<!-- Drop  -->

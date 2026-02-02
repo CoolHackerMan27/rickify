@@ -1,7 +1,6 @@
 <script lang="ts">
-	//get data from sessionstore
 	import { goto } from '$app/navigation';
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import { onMount } from 'svelte';
 	import {
 		parseSpotifyJSON,
@@ -42,7 +41,7 @@
 		); // Sort by most played
 		isLoading = false;
 		artistList = getAllArtists(parsedFiles);
-		console.log('detailed:', detailed);
+		//console.log('detailed:', detailed);
 	});
 </script>
 
@@ -52,9 +51,9 @@
 		<div class="mb-8 flex items-center justify-between">
 			<div>
 				<h1 class="text-3xl font-bold tracking-tight">Your Listening Stats</h1>
-				<p class="text-zinc-500">You have bad taste in music tbh</p>
+				<p class="text-zinc-500">Here's what you've been listening to</p>
 			</div>
-			<Button variant="outline" onclick={() => goto(`${base}/`)}>← Back Home</Button>
+			<Button variant="outline" onclick={() => goto(`${resolve('/')}`)}>← Back Home</Button>
 		</div>
 
 		{#if isLoading}
