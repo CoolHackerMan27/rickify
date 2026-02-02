@@ -2,13 +2,14 @@
 	import * as Card from '$lib/components/ui/card';
 	import { Button } from '$lib/components/ui/button';
 	import { Badge } from '$lib/components/ui/badge';
+	import { base } from '$app/paths';
 </script>
 
 <div class="min-h-screen">
 	<div class="mx-auto max-w-2xl px-6 py-16">
 		<!-- Header -->
 		<div class="mb-8">
-			<Button variant="ghost" href="/">← Back Home</Button>
+			<Button variant="ghost" href="{base}/">← Back Home</Button>
 		</div>
 
 		<!-- Title -->
@@ -71,7 +72,7 @@
 
 		<!-- Links -->
 		<div class="flex justify-center gap-4">
-			<Button variant="outline" href="/license">License</Button>
+			<Button variant="outline" href="{base}/license">License</Button>
 		</div>
 	</div>
 </div>

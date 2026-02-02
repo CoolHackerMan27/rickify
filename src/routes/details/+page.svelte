@@ -1,6 +1,7 @@
 <script lang="ts">
 	//get data from sessionstore
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
 	import {
 		parseSpotifyJSON,
@@ -53,7 +54,7 @@
 				<h1 class="text-3xl font-bold tracking-tight">Your Listening Stats</h1>
 				<p class="text-zinc-500">You have bad taste in music tbh</p>
 			</div>
-			<Button variant="outline" onclick={() => goto('/')}>← Back Home</Button>
+			<Button variant="outline" onclick={() => goto(`${base}/`)}>← Back Home</Button>
 		</div>
 
 		{#if isLoading}

@@ -63,7 +63,7 @@
 
 		try {
 			sessionStorage.setItem('droppedFiles', JSON.stringify(allData));
-			goto('/details', {});
+			goto(`${base}/details`, {});
 		} catch (err) {
 			console.error('Storage error:', err);
 			alert('Data is too large to store. Try uploading fewer files.');
@@ -102,7 +102,7 @@
 
 		<!-- Navigation -->
 		<div class="flex justify-center">
-			<Button variant="outline" href="/about">About my site</Button>
+			<Button variant="outline" href="{base}/about">About my site</Button>
 		</div>
 
 		<!-- Drop  -->
