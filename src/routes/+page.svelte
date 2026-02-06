@@ -87,7 +87,7 @@
 	<div class="mx-auto max-w-2xl px-6 py-16">
 		<!-- Hero Section -->
 		<div class="mb-12 text-center">
-			<h1 class="mb-4 text-5xl font-bold tracking-tight">Welcome to Rickify</h1>
+			<h1 class="mb-4 text-5xl font-bold tracking-tight">Welcome to Plankify</h1>
 			<p class="text-lg text-zinc-400">
 				It's a random spotify data analysis thing. Made for fun and to learn SvelteKit.
 			</p>
@@ -96,7 +96,7 @@
 		<!-- Logo Card -->
 		<Card.Root class="mb-8">
 			<Card.Content class="flex justify-center p-8">
-				<img src={logo} alt="Rickify Logo" width="200" class="rounded-lg shadow-md" />
+				<img src={logo} alt="Plankify Logo" width="200" class="rounded-lg shadow-md" />
 			</Card.Content>
 		</Card.Root>
 

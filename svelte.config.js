@@ -12,7 +12,7 @@ const config = {
 			precompress: false
 		}),
 		paths: {
-			base: dev ? '' : '/rickify'
+			base: dev ? '' : '/plankify'
 		},
 		prerender: {
 			handleHttpError: 'warn'

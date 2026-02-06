@@ -7,7 +7,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>Rickify - Spotify Stats</title>
+	<title>Plankify - Spotify Stats</title>
 </svelte:head>
 
 <div class="dark min-h-screen bg-zinc-950 text-zinc-50">

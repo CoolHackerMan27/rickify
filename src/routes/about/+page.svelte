@@ -14,7 +14,7 @@
 
 		<!-- Title -->
 		<div class="mb-12 text-center">
-			<h1 class="mb-4 text-4xl font-bold tracking-tight">About Rickify</h1>
+			<h1 class="mb-4 text-4xl font-bold tracking-tight">About Plankify</h1>
 			<Badge variant="secondary">v1.0.0</Badge>
 		</div>
 
@@ -50,7 +50,7 @@
 					<li>Scroll down and request your "Extended streaming history"</li>
 					<li>Wait for Spotify to email you (can take up to 30 days)</li>
 					<li>Download and unzip the files</li>
-					<li>Drop the JSON files onto Rickify</li>
+					<li>Drop the JSON files onto Plankify</li>
 				</ol>
 			</Card.Content>
 		</Card.Root>
